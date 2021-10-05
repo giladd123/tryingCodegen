@@ -1,0 +1,31 @@
+{
+  "name": "codegen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev src/index.ts",
+    "generate": "graphql-codegen --config codegen.yml"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^3.22.0",
+    "graphql": "^15.6.0",
+    "graphql-helix": "^1.8.0",
+    "graphql-import-node": "0.0.4",
+    "typescript": "^4.4.3"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "2.2.0",
+    "@graphql-codegen/introspection": "2.1.0",
+    "@graphql-codegen/typescript": "^2.2.2",
+    "@graphql-codegen/typescript-resolvers": "^2.3.0",
+    "@prisma/client": "^3.1.1",
+    "@types/node": "^16.10.2",
+    "prisma": "^3.1.1",
+    "ts-node": "^10.2.1",
+    "ts-node-dev": "^1.1.8"
+  }
+}

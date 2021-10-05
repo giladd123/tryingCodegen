@@ -1,0 +1,14 @@
+overwrite: true
+schema: "src/schema.graphql"
+documents: null
+generates:
+  build.ts:
+    config:
+      mappers:
+        Person: .prisma/client#Person
+    plugins:
+      - "typescript"
+      - "typescript-resolvers"
+    # ./graphql.schema.json:
+    # plugins:
+    #   - "introspection"
